@@ -2,7 +2,7 @@ A MLIR-based Ada Parser
 --
 
 At the moment, this is just an out-of-tree build of the first MLIR toy example
-you can found in `llvm-project/mlir/examples/toy/Ch1`.
+you can find in: `llvm-project/mlir/examples/toy/Ch1`.
 
 # An out-of-tree build
 
@@ -25,7 +25,7 @@ cmake -G Ninja ../llvm-project/llvm \
 
 Configure and build this parser with:
 
-```
+```sh
 mkdir build && cd build
 cmake -G Ninja .. -DMLIR_DIR=../llvm-project-prefix/lib/cmake/mlir \
     -DLLVM_EXTERNAL_LIT=../llvm-project-build/bin/llvm-lit
