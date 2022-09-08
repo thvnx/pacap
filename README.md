@@ -27,6 +27,18 @@ cmake -G Ninja .. -DMLIR_DIR=/usr/lib/llvm-16/lib/cmake/mlir \
 cmake --build . --target toyc-ch1
 ```
 
+Basic test command:
+
+```sh
+$ ./build/bin/toyc-ch1 -emit=ast -color test.tc
+  Module:
+    Function
+      Proto 'a' @test.tc:1:1
+      Params: []
+      Block {
+      } // Block
+```
+
 ## By building LLVM
 
 First, build LLVM/MLIR:
